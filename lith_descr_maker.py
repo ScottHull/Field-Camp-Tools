@@ -1,12 +1,15 @@
 import os, sys, csv
 
 
+home_dir = []
+home_dir.append(os.getcwd())
+
 print("\n__________________________________\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 print("Litholigic Unit Description Maker")
 print("Scott D. Hull, 2016")
 print("\n\nPlease enter the following prompts.  Press 'enter' on questions you'd like to skip.\n")
 
-if "Lithologic_Description.txt" in os.listdir(os.curdir):
+if "Lithologic_Description.txt" in os.listdir(os.getcwd()):
     os.remove("Lithologic_Description.txt")
 else:
     pass
@@ -87,4 +90,5 @@ f = open("Lithologic_Description.txt", 'r')
 file_contents = f.read()
 print(file_contents)
 f.close()
+print("\n'Lithologic_Description.txt' now available in '" + home_dir[0] + "'.")
 print("\n\nExiting script...\n__________________________________\n")
