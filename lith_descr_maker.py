@@ -7,7 +7,7 @@ home_dir.append(os.getcwd())
 print("\n__________________________________\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 print("Litholigic Unit Description Maker")
 print("Scott D. Hull, 2016")
-print("\n\nPlease enter the following prompts.  Press 'enter' on questions you'd like to skip.\n")
+print("\n\nPlease enter relevant information when prompted.  Press 'enter' on questions you'd like to skip.\n")
 
 if "Lithologic_Description.txt" in os.listdir(os.getcwd()):
     os.remove("Lithologic_Description.txt")
