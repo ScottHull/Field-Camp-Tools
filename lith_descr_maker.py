@@ -39,6 +39,7 @@ print("Other features\n\n")
 
 def lithloop():
     x1 = input("Lithology: ")
+    x17 = input("Slope/Ledge/Cliff forming: ")
     x2 = input("Color: ")
     x3 = input("Bed thickness: ")
     x4 = input("Induration: ")
@@ -57,22 +58,22 @@ def lithloop():
         x13 = input("\nWould you like to add another lithology?  Enter 'y' or 'n': ")
         if x13 == "y":
             if x14 == "":
-                output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
                  + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ".  "
                 outputfile.write(output_strings)
                 lithloop()
             else:
-                output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
                  + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ", " + x14 +  ".  "
                 outputfile.write(output_strings)
                 lithloop()
         elif x13 == "n":
             if x14 == "":
-                output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
                  + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + "."
                 outputfile.write(output_strings)
             else:
-                output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
                  + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 +  ", " + x14 + "."
                 outputfile.write(output_strings)
         else:
