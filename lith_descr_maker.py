@@ -13,6 +13,7 @@ if "Lithologic_Description.txt" in os.listdir(os.getcwd()):
     os.remove("Lithologic_Description.txt")
 else:
     pass
+
 outputfile = open("Lithologic_Description.txt", 'a')
 
 
