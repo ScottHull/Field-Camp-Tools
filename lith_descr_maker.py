@@ -67,7 +67,7 @@ def lithloop():
             lithloop()
         elif x13 == "n":
             output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-             + ", " + x9 + ", " + x10 + ", " + x15 + ", " + x16 + ", " + x14 + ", " + x11 + ", " + x18 + ", " + x12 + ".  "
+             + ", " + x9 + ", " + x10 + ", " + x15 + ", " + x16 + ", " + x14 + ", " + x11 + ", " + x18 + ", " + x12 + "."
             outputfile.write(output_strings)
         else:
             print("\nOops!  That's not a valid option!\n")
