@@ -30,6 +30,8 @@ print("Cement")
 print("Fossils")
 print("Definition of contact(s)")
 print("Unit thickness")
+print("Structures")
+print("Way up")
 print("Other features\n\n")
 
 def lithloop():
@@ -45,29 +47,31 @@ def lithloop():
     x10 = input("Fossils: ")
     x11 = input("Definition of contact(s): ")
     x12 = input("Unit thickness: ")
+    x15 = input("Structures: ")
+    x16 = input("Way up: ")
     x14 = input("Other features: ")
     def endloop():
         x13 = input("\nWould you like to add another lithology?  Enter 'y' or 'n': ")
         if x13 == "y":
             if x14 == "":
                 output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ".  "
+                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ".  "
                 outputfile.write(output_strings)
                 lithloop()
             else:
                 output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x14 +  ".  "
+                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ", " + x14 +  ".  "
                 outputfile.write(output_strings)
                 lithloop()
         elif x13 == "n":
             if x14 == "":
                 output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + "."
+                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + "."
                 outputfile.write(output_strings)
                 lithloop()
             else:
                 output_strings = x1 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x14 + "."
+                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 +  ", " + x14 + "."
                 outputfile.write(output_strings)
         else:
             print("\nOops!  That's not a valid option!\n")
