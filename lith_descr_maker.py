@@ -29,7 +29,8 @@ print("Grain composition")
 print("Cement")
 print("Fossils")
 print("Definition of contact(s)")
-print("Unit thickness\n\n")
+print("Unit thickness")
+print("Other features\n\n")
 
 def lithloop():
     x1 = input("Lithology: ")
