@@ -7,6 +7,8 @@ TOOL 1: THREEPOINTPROBLEMI.PY
 
 Three Point Problem Solver (work in progress)
 
+Assists in the construction of a classic three point problem in geology.
+
 By: Scott D. Hull, Field Camp 2016
 
 
@@ -24,7 +26,7 @@ Disclaimer: This code is not finished.  Please check your work and report any pr
 _________________________________________________________________________________________________________________
 TOOL 2: QUAD2AZI.PY
 
-QUADRANT TO AZIMUTH CONVERTER.
+Quadrant to Azimuth Converter.
 
 Converts quadrant compass measurements to azimuth.
 
@@ -46,6 +48,8 @@ The code will convert quadrant to azimuth notation and output a file called 'Qua
 
 _________________________________________________________________________________________________________________
 TOOL 3: LITH_DESCR_MAKER.PY
+
+Lithologic Description Maker.
 
 Prints out an ordered lithologic description.
 
