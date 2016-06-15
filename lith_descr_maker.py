@@ -7,13 +7,12 @@ home_dir.append(os.getcwd())
 print("\n__________________________________\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 print("Litholigic Unit Description Maker")
 print("Scott D. Hull, 2016")
-print("\n\nPlease enter relevant information when prompted.  Press 'enter' on questions you'd like to skip.\n")
+print("\n\nPlease enter the following prompts.  Press 'enter' on questions you'd like to skip.\n")
 
 if "Lithologic_Description.txt" in os.listdir(os.getcwd()):
     os.remove("Lithologic_Description.txt")
 else:
     pass
-
 outputfile = open("Lithologic_Description.txt", 'a')
 
 
@@ -33,11 +32,12 @@ print("Grain shape")
 print("Grain composition")
 print("Cement")
 print("Fossils")
-print("Definition of contact(s)")
-print("Unit thickness")
 print("Structures")
 print("Way up")
-print("Other features\n\n")
+print("Other features")
+print("Definition of upper contact")
+print("Definition of lower contact")
+print("Unit thickness\n\n")
 
 def lithloop():
     print("\n")
@@ -52,33 +52,23 @@ def lithloop():
     x8 = input("Grain composition: ")
     x9 = input("Cement: ")
     x10 = input("Fossils: ")
-    x11 = input("Definition of contact(s): ")
-    x12 = input("Unit thickness: ")
     x15 = input("Structures: ")
     x16 = input("Way up: ")
     x14 = input("Other features: ")
+    x11 = input("Definition of upper contact: ")
+    x18 = input("Definition of lower contact: ")
+    x12 = input("Unit thickness: ")
     def endloop():
         x13 = input("\nWould you like to add another lithology?  Enter 'y' or 'n': ")
         if x13 == "y":
-            if x14 == "":
-                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ".  "
-                outputfile.write(output_strings)
-                lithloop()
-            else:
-                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + ", " + x14 +  ".  "
-                outputfile.write(output_strings)
-                lithloop()
+            output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+             + ", " + x9 + ", " + x10 + ", " + x15 + ", " + x16 + ", " + x14 + ", " + x11 + ", " + x18 + ", " + x12 + ".  "
+            outputfile.write(output_strings)
+            lithloop()
         elif x13 == "n":
-            if x14 == "":
-                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 + "."
-                outputfile.write(output_strings)
-            else:
-                output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
-                 + ", " + x9 + ", " + x10 + ", " + x11 + ", " + x12 + ", " + x15 + ", " + x16 +  ", " + x14 + "."
-                outputfile.write(output_strings)
+            output_strings = x1 + ", " + x17 + ", " + x2 + ", " + x3 + ", " + x4 + ", " + x5 + ", " + x6 + ", " + x7 + ", " + x8 \
+             + ", " + x9 + ", " + x10 + ", " + x15 + ", " + x16 + ", " + x14 + ", " + x11 + ", " + x18 + ", " + x12 + ".  "
+            outputfile.write(output_strings)
         else:
             print("\nOops!  That's not a valid option!\n")
             endloop()
