@@ -59,3 +59,15 @@ Boot up 'lith_descr_maker.py' in the command terminal with Python 3.
 
 Enter in lithologic descriptions as prompted, and you may enter as may as you'd like per lithostratigraphic unit.  A proper, ordered lithologic description will be printed at the end at saved to a file called "Lithologic_Description.txt'.  This file will be deleted and recreated the next time the script is booted up.
 
+
+
+_________________________________________________________________________________________________________________
+TOOL : APPARENTDIPCALCULATOR.PY
+
+Calculates apparent dip given true dip and angle between strike line and strike.
+
+By: Scott D. Hull, Field Camp 2016
+
+Boot up "apparentdipcalculator.py' in the command terminal with Python 3.  Please make sure that all inputs, incluidng in .csv inputs, are in degrees.
+
+Enter either 'input' to manually enter in true dip and the angle between strike and the cross section line one at a time, or enter 'csv' to input a .csv file with multiple pairs of values.  If inputting a .csv file, make sure that true dip is in the first column and the angle between the strike and the cross section line is in the second line.  If using the .csv input, the program will not only output apparant dip to the screen but will write a file named "apparent_dip_outputs.txt' which will include true dip in the first column, the angle between the strike and the cross-section line in the second column, and the apparent dip in the third column.
