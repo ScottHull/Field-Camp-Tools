@@ -62,7 +62,7 @@ Enter in lithologic descriptions as prompted, and you may enter as may as you'd 
 
 
 _________________________________________________________________________________________________________________
-TOOL : APPARENTDIPCALCULATOR.PY
+TOOL 4: APPARENTDIPCALCULATOR.PY
 
 Calculates apparent dip given true dip and angle between strike line and strike.
 
